@@ -1,0 +1,31 @@
+$primary: #673ab7;
+$danger: #ff5252;
+$success: #4caf50;
+$warning: #ffa000;
+$info: #0288d1;
+$input-btn-focus-width: 0.025rem;
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+.app {
+  margin-bottom: 1rem;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in-animation {
+  animation: fade-in 0.5s;
+  transition: all 0.3s;
+}

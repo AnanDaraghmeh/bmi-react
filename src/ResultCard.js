@@ -1,14 +1,14 @@
-import React from "react";
-import { Card, Button } from "react-bootstrap";
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
 
-import { bmiDetails } from "./data";
+import { bmiDetails } from './data';
 
 class ResultCard extends React.Component {
   state = {
-    result: "",
-    desc: "",
-    color: "",
-    icon: ""
+    result: '',
+    desc: '',
+    color: '',
+    icon: ''
   };
 
   componentDidMount = () => {
@@ -62,7 +62,7 @@ class ResultCard extends React.Component {
       <Card bg={color} className="fade-in-animation text-white">
         <Card.Header className="display-4 text-monospace font-weight-bold">
           {bmi}
-          <i className={`fas ${icon} ml-3`} />
+          <i className={`fas ${icon} ml-4`} />
         </Card.Header>
         <Card.Body>
           <Card.Title>{result}</Card.Title>
@@ -70,7 +70,7 @@ class ResultCard extends React.Component {
           <Button
             href="https://en.wikipedia.org/wiki/Body_mass_index"
             target="_blank"
-            variant="outline-secondary"
+            variant="outline-primary"
           >
             More Info
           </Button>
